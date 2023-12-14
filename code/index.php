@@ -2,7 +2,7 @@
 require_once 'templates/header.php';
 
 
-$db = new PDO("mysql:host=localhost;dbname=practice_security", "root", "Tluantt34@");
+$db = new PDO("mysql:host=localhost;dbname=practice_security", "root", "");
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['username']) && isset($_POST['password'])) {
     $username = $_POST['username'];
